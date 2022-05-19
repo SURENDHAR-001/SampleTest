@@ -1,0 +1,38 @@
+package com.selenium.sample;
+
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
+
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class ScreenShot {
+
+	private static Object FileUtils;
+
+	public static void main(String[] args) throws InterruptedException, IOException {
+		// TODO Auto-generated method stub
+		
+		System.setProperty("webdriver.chrome.driver", "E:\\surendhar\\drivers\\chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://www.google.com/");
+		driver.manage().window().maximize();
+		Thread.sleep(1000);
+		
+		//Capturing the Screenshot with the help of  ashot()
+		 
+	      Screenshot screenshot=new AShot().takeScreenshot(drv); 
+	      ImageIO.write(screenshot.getImage(),"PNG",new File("C:\\Users\\Chait\\Desktop\\Screenshots\\entirepage.png"));
+	 
+	     //The screenshot to be captured will be in .png image format and would be saved at above mentioned path.
+	 
+	        System.out.println("Screenshot for full page is captured successfully!");
+
+	}
+
+}

@@ -1,0 +1,37 @@
+package com.selenium.sample;
+
+import java.io.File;
+
+import javax.imageio.ImageIO;
+
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class ScreenShot {
+
+	private static Object FileUtils;
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		
+		System.setProperty("webdriver.chrome.driver", "E:\\surendhar\\drivers\\chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://www.google.com/");
+		driver.manage().window().maximize();
+		Thread.sleep(1000);
+		
+		 File f = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+	   //
+		 //FileUtils.copyFile(f, new File("C:/Users/Chait/Desktop/Screenshots/screenshot01.png"));
+	 
+		 
+		 ImageIO.write(f,"jpg",new File("1"+".jpg"));
+	      //screenshot copied from buffer is saved at the mentioned path.
+	 
+	     System.out.println("The Screenshot is captured.");
+
+	}
+
+}

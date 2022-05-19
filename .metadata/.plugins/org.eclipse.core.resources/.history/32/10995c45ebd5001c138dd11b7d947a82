@@ -1,0 +1,34 @@
+package com.selenium.sample;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterMethod;
+
+public class NewTest2 {
+  @Test
+  public void f() {
+	  
+	  driver = new ChromeDriver();
+	  20
+	        String url = "https://www.google.com";
+	  21
+	        driver.get(url);
+	  22
+	        //Capturing the title and validating if expected is equal to actual
+	  23
+	        String expectedTitle = "Google";
+	  24
+	        String actualTitle = driver.getTitle();
+	  25
+	        Assert.assertEquals(actualTitle, expectedTitle);
+	  
+  }
+  @BeforeMethod
+  public void beforeMethod() {
+  }
+
+  @AfterMethod
+  public void afterMethod() {
+  }
+
+}

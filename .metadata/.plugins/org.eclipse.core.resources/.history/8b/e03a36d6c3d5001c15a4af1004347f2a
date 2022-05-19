@@ -1,0 +1,22 @@
+package com.selenium.sample;
+
+public class UsingLog4j2 {
+	
+private static final org.slf4j.Logger Logger = LoggerFactory.getLogger(Example1.class);
+	
+	
+	public static void main(String[] args) {
+		
+		Logger.info("this is info");
+		
+//		System.setProperty("webdriver.chrome.driver", "E:\\surendhar\\drivers\\chromedriver.exe");
+//		WebDriver driver=new ChromeDriver();
+//		driver.get("https://www.google.com/");
+//		driver.manage().window().maximize();
+//		log.info(driver.getCurrentUrl());
+//		driver.close();
+
+	}
+
+
+}

@@ -1,0 +1,38 @@
+package com.selenium.sample;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select; 
+
+public class UsingSelect {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		
+		System.setProperty("webdriver.chrome.driver", "E:\\surendhar\\drivers\\chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://community.tableau.com/s/question/0D54T00000C5ujbSAB/month-filter-slider-show-names-of-months");
+		driver.manage().window().maximize();
+		Thread.sleep(1000);
+		
+		
+		WebElement a=driver.findElement(By.xpath(".//button[@aria-current=\"false\"]"));
+		Thread.sleep(1000);
+		
+		Actions b=new Actions(driver);
+		
+		 b.moveToElement(a); 
+		 
+		 
+		 Select c=new Select(driver.findElement(By.xpath(".//button[@aria-current=\"false\"]")));
+		 
+		 c.selectByVisibleText("How to make Meal Maker 65");
+		 
+		
+
+	}
+
+}

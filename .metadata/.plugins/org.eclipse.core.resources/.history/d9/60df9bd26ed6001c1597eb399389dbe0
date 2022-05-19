@@ -1,0 +1,29 @@
+package com.selenium.sample;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions; 
+
+public class UsingSelect {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		
+		System.setProperty("webdriver.chrome.driver", "E:\\surendhar\\drivers\\chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://kiodigital.net/economy/koyambedu-market-fruits-price-list-today/");
+		driver.manage().window().maximize();
+		Thread.sleep(1000);
+		
+		
+		WebElement a=driver.findElement(By.xpath(".//li[@id=\"menu-item-378\"]"));
+		Thread.sleep(1000);
+		
+		Actions b=new Actions(driver);
+		
+
+	}
+
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="Oops1.Car"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="org.slf4j.LoggerFactory"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.TakesScreenshot"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.OutputType"/>
+    <fullyQualifiedTypeName name="javax.imageio.ImageIO"/>
+    <fullyQualifiedTypeName name="java.awt.image.BufferedImage"/>
+    <fullyQualifiedTypeName name="org.junit.Before"/>
+    <fullyQualifiedTypeName name="org.junit.Test"/>
+    <fullyQualifiedTypeName name="org.junit.After"/>
+    <fullyQualifiedTypeName name="dev.failsafe.internal.util.Assert"/>
+    <fullyQualifiedTypeName name="org.junit.Assert"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.chrome.ChromeDriver"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.interactions.Actions"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.Select"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.Keys"/>
+    <fullyQualifiedTypeName name="java.lang.System.Logger.Level"/>
+    <fullyQualifiedTypeName name="java.util.logging.Level"/>
+    <fullyQualifiedTypeName name="com.google.j2objc.annotations.ReflectionSupport.Level"/>
+    <fullyQualifiedTypeName name="io.netty.util.ResourceLeakDetector.Level"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.devtools.v100.console.model.ConsoleMessage.Level"/>
+    <fullyQualifiedTypeName name="org.slf4j.event.Level"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
+</qualifiedTypeNameHistroy>

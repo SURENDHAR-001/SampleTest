@@ -1,0 +1,17 @@
+package com.selenium.sample;
+
+import org.slf4j.LoggerFactory;
+
+public class Usinglog4j1 {
+
+private static final org.slf4j.Logger Log = LoggerFactory.getLogger(Usinglog4j1.class);
+	
+	public static void main(String[] args) {
+		
+		Log.info("this is info");
+		Log.debug("this is debug");
+		Log.warn("Low fuel level.");
+		
+	}
+
+}
